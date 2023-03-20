@@ -65,7 +65,7 @@ nav .wrapper{
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box{
   transition: all 0.3s ease;
-  top: 70px;
+  top: 69px;
   opacity: 1;
   visibility: visible;
 }
@@ -80,9 +80,7 @@ nav .wrapper{
 /*Drop Down Menu*/
 .mega-box{
   position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 0 30px;
+  right: 2px; 
   top: 85px;
   opacity: 0;
   visibility: hidden;
@@ -273,6 +271,83 @@ nav input{
   display: block;
 }
 
+.home-container{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  padding: 80px 30px 30px 30px;
+}
+
+.home-container div{
+  align-items: center;
+  width: 100%;
+}
+
+.home-img{
+  display: flex;
+  justify-content: center;
+}
+#homeimg{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.home-typebox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-typebox h2{
+  color: black;
+  font-size: 30px;
+}
+
+.home
+
+/*Sign up section*/
+.signup-container{
+  margin-top: 20px;
+  position: relative;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup-card{
+  position: relative;
+  background: white;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  column-gap: 50px;
+}
+
+.signup-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  height: 100px;
+  margin-left: 70px;
+}
+
+.signup-content a{
+  text-decoration: none;
+}
+
+.btn{
+  background: orange;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 20px 30px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
 /*Description of aikido*/
 .body-text{
   display: flex;
