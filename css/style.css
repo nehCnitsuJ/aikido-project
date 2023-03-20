@@ -5,6 +5,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+/*Nav bar css*/
 nav{
   position: fixed;
   z-index: 99;
@@ -74,6 +76,8 @@ nav .wrapper{
   font-weight: 400;
   border-radius: 0px;
 }
+
+/*Drop Down Menu*/
 .mega-box{
   position: absolute;
   left: 0;
@@ -129,6 +133,7 @@ nav .wrapper{
   top: 10px;
 }
 
+/*Nav bar for tablets*/
 @media screen and (max-width: 970px) {
   .wrapper .btn{
     display: block;
@@ -153,10 +158,10 @@ nav .wrapper{
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: orange;
+    background: #f2f2f2
   }
   ::-webkit-scrollbar-thumb {
-    background: rgb(253, 187, 65);
+    background: #666362
   }
   #menu-btn:checked ~ .nav-links{
     left: 0%;
@@ -253,6 +258,22 @@ nav input{
   display: none;
 }
 
+/*Landscape image after navbar*/
+.landscape-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.landscape-container img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/*Description of aikido*/
 .body-text{
   display: flex;
   width: 100%;
