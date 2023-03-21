@@ -1,16 +1,17 @@
 //To create reveal animations
 ScrollReveal({
   //reset: true,
-  distance: "60px",
+  distance: "40px",
   duration: 2500,
   delay: 400,
 });
 
 //target elements, and specify options to create reveal animations
-ScrollReveal().reveal(".home-img, .aikido-desc, .class-img", {
+ScrollReveal().reveal(".home-container", {
   delay: 500,
-  origin: "right",
+  origin: "top",
 });
+
 ScrollReveal().reveal(
   ".section-headings, .videos-container, .footer-distributed",
   {
@@ -19,7 +20,7 @@ ScrollReveal().reveal(
   }
 );
 
-ScrollReveal().reveal(".class-desc", {
+ScrollReveal().reveal(".class-desc, .class-img", {
   delay: 500,
   origin: "left",
 });
