@@ -9,13 +9,68 @@
 html {
   scroll-behavior: smooth;
 }
+/*Scroll to top button*/
+.scrollToTop-btn {
+  z-index: 99999;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  width: 35px;
+  height: 35px;
+  background: orange;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s ease;
+}
 
+.scrollToTop-btn.active {
+  right: 20px;
+  pointer-events: all;
+  opacity: 1;
+}
+
+/*Whatsapp button*/
+.whatsapp-btn {
+  z-index: 99999;
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  background: greenyellow;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.whatsapp-btn a {
+  text-decoration: none;
+}
+
+.whatsapp-btn.active {
+  left: 20px;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .section-headings {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
+}
+
+.section-headings-aboutus {
+  padding-top: 30px;
 }
 
 .section-title-01 {
@@ -39,6 +94,16 @@ html {
   content: "";
   position: absolute;
   width: 70px;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+  background: orange;
+}
+
+.section-title-02-aboutus:before {
+  content: "";
+  position: absolute;
+  width: 50px;
   height: 5px;
   right: 0;
   bottom: 0;
@@ -300,4 +365,51 @@ nav .wrapper {
 }
 nav input {
   display: none;
+}
+
+/*Teaching videos*/
+.teaching-vids .vid-container {
+  flex-direction: column;
+}
+
+.teaching-vids .vid-container .content {
+  width: 100%;
+}
+
+.vid-swiper .swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+.vid-swiper .swiper-slide {
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.videos {
+  width: 450px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.videos video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: orange;
+  font-size: 3em;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: orange;
 }
