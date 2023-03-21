@@ -46,6 +46,10 @@ html {
   transition: 0.5s ease;
 }
 
+.whatsapp-btn a {
+  text-decoration: none;
+}
+
 .whatsapp-btn.active {
   left: 20px;
   pointer-events: all;
