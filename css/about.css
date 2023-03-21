@@ -9,6 +9,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+a {
+  text-decoration: none;
+}
 /*Scroll to top button*/
 .scrollToTop-btn {
   z-index: 99999;
@@ -412,4 +416,68 @@ nav input {
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
   background: orange;
+}
+
+/*Meet Our Teachers*/
+.teachers-container {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 350px;
+  padding: 0px 30px 30px 30px;
+}
+
+.teachers-container h3 {
+  color: #666362;
+}
+
+.outlet-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  padding-right: 10px;
+}
+
+.preschool-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  padding-left: 10px;
+}
+
+.outlet-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.preschool-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.teacher-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 550px;
+  margin: 0;
+  padding: 0px 30px 30px 30px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.teacher-desc span {
+  font-weight: 600;
+}
+
+.teacher-desc a {
+  color: orangered;
 }
