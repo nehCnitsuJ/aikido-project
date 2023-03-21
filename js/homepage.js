@@ -1,3 +1,29 @@
+//To create reveal animations
+ScrollReveal({
+  //reset: true,
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+});
+
+//target elements, and specify options to create reveal animations
+ScrollReveal().reveal(".home-img, .aikido-desc, .class-img", {
+  delay: 500,
+  origin: "right",
+});
+ScrollReveal().reveal(
+  ".section-headings, .videos-container, .footer-distributed",
+  {
+    delay: 600,
+    origin: "bottom",
+  }
+);
+
+ScrollReveal().reveal(".class-desc", {
+  delay: 500,
+  origin: "left",
+});
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
   stickyscroll();
