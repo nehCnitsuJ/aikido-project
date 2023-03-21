@@ -21,9 +21,9 @@ function stickyscroll() {
 //Type writer animation
 var typed = new Typed(".auto-type", {
   strings: [
-    "Welcome to aikiForest",
-    "The educational powerhouse in contemporary aikido",
-    "We deliver and develop high quality and learner-centric aikido programmes",
+    "Welcome to aikiForest!",
+    "The educational powerhouse in contemporary aikido.",
+    "We deliver and develop high quality and learner-centric aikido programmes.",
   ],
   typeSpeed: 50,
   backSpeed: 50,
