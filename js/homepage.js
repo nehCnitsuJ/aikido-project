@@ -25,6 +25,25 @@ ScrollReveal().reveal(".class-desc, .class-img", {
   origin: "left",
 });
 
+//Scroll to top button
+const scrollTopBtn = document.querySelector(".scrollToTop-btn");
+
+window.addEventListener("scroll", function () {
+  scrollTopBtn.classList.toggle("active", window.scrollY > 500);
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+//whatsapp button
+const whatsappBtn = document.querySelector(".whatsapp-btn");
+
+window.addEventListener("scroll", function () {
+  whatsappBtn.classList.toggle("active", window.scrollY > 500);
+});
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
   stickyscroll();
