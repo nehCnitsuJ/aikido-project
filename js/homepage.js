@@ -7,11 +7,6 @@ ScrollReveal({
 });
 
 //target elements, and specify options to create reveal animations
-ScrollReveal().reveal(".home-container", {
-  delay: 500,
-  origin: "top",
-});
-
 ScrollReveal().reveal(
   ".section-headings, .videos-container, .footer-distributed",
   {
