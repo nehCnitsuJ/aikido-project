@@ -105,13 +105,11 @@ li {
 }
 
 .section-title-02-CC:before {
-  content: "";
-  position: absolute;
   width: 110px;
-  height: 5px;
-  right: 0;
-  bottom: 0;
-  background: orange;
+}
+
+.section-title-02-YA:before {
+  width: 110px;
 }
 /*Nav bar css*/
 nav {
@@ -446,6 +444,10 @@ nav input {
   background: rgb(0, 183, 255);
 }
 
+#labelYA {
+  background: rgb(0, 89, 255);
+}
+
 .attribute-info h4 label {
   color: #fff;
   font-size: 1em;
@@ -465,6 +467,11 @@ nav input {
 #borderCS {
   border-bottom: 3px solid rgb(0, 183, 255);
 }
+
+#borderYA {
+  border-bottom: 3px solid rgb(0, 89, 255);
+}
+
 .attribute-list .item {
   background: #fff;
   box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
@@ -495,6 +502,11 @@ nav input {
 #btnCS {
   background: rgb(0, 183, 255);
 }
+
+#btnYA {
+  background: rgb(0, 89, 255);
+}
+
 .btnVS {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   font-size: 16px;
@@ -504,4 +516,230 @@ nav input {
   letter-spacing: 1px;
   border-radius: 10px;
   margin-top: 20px;
+}
+
+.attribute-list .item:hover {
+  transform: scale(1.03);
+}
+
+/*Sign up section*/
+.signup-container {
+  margin-top: 100px;
+  position: relative;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.signup-card {
+  position: relative;
+  background: white;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  column-gap: 50px;
+}
+
+.signup-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  height: 100px;
+  margin-left: 70px;
+  color: #666362;
+}
+
+.signup-content a {
+  text-decoration: none;
+}
+
+.btnSU {
+  background: orange;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 20px 30px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+/*footer*/
+.footer-distributed {
+  background: #f2f2f2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #666362;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+/*CHANGE TO LOGO WHEN HAVE ACCESS*/
+.footer-distributed h3 span {
+  color: orange;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #666362;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 39%;
+}
+
+.footer-distributed .footer-center i {
+  color: #666362;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 42px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.bi-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #666362;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: orange;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #666362;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* .footer-distributed .footer-links .link-1:before {
+    content: none;
+  } */
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #666362;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #666362;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Responsive for footer*/
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
 }
