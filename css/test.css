@@ -27,7 +27,7 @@ li {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 6rem 2rem 2rem;
+  padding: 3rem 2rem 2rem;
 }
 
 /*Splash Screen*/
@@ -368,6 +368,19 @@ nav input {
 .text-box h3 {
   font-weight: 700;
   margin-bottom: 10px;
+}
+
+/*About section*/
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+}
+
+#next {
+  background-color: #f2f2f2;
 }
 /* .welcome-container p {
   background-color: #f2f2f2;
