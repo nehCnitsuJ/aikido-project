@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@100;200;300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Italiana", serif;
+  font-family: "Raleway", sans-serif;
 }
 
 html {
@@ -22,6 +25,11 @@ li {
   list-style-type: none;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .section {
   position: relative;
   max-width: 100%;
@@ -30,6 +38,11 @@ li {
   padding: 3rem 2rem 2rem;
 }
 
+.section-headers span {
+  font-size: 20px;
+  font-weight: 300;
+  color: #666362;
+}
 /*Splash Screen*/
 .splash-screen {
   position: absolute;
@@ -344,7 +357,7 @@ nav input {
 
 /*Landscape image*/
 .welcome-container {
-  background-image: url("../imgs/landscape2.1.jpg");
+  background-image: url("../imgs/landscape5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -372,11 +385,39 @@ nav input {
 
 /*About section*/
 .about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.text-details {
   flex-direction: row;
-  height: 100vh;
+  height: 400px;
+}
+
+.text-details img {
+  max-width: 100%;
+  max-height: 80%;
+  display: block;
+}
+
+#about-p {
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  padding: 0px 40px;
+}
+
+.class-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  height: 250px;
+  justify-content: space-evenly;
+}
+
+#class-a {
+  color: red;
 }
 
 #next {
@@ -388,3 +429,19 @@ nav input {
   height: 300px;
   padding: 50px;
 } */
+
+.trial-btn {
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.trial-btn:hover {
+  border-bottom: 3px solid orange;
+}
