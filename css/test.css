@@ -219,7 +219,7 @@ nav .wrapper {
   color: orange;
 }
 .wrapper .btn {
-  color: #666362;
+  color: #fff;
   font-size: 20px;
   cursor: pointer;
   display: none;
@@ -228,6 +228,7 @@ nav .wrapper {
   position: absolute;
   right: 30px;
   top: 10px;
+  color: #666362;
 }
 
 /*Nav bar for tablets*/
@@ -249,6 +250,9 @@ nav .wrapper {
     overflow-y: auto;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
     transition: all 0.3s ease;
+  }
+  .spanlist i {
+    color: #fff;
   }
   /* custom scroll bar */
   ::-webkit-scrollbar {
@@ -273,6 +277,7 @@ nav .wrapper {
     margin: 15px 10px;
   }
   .nav-links li a {
+    color: #666362;
     padding: 0 20px;
     display: block;
     font-size: 20px;
@@ -468,7 +473,9 @@ nav input {
 }
 
 .trial-btn:hover {
-  border-bottom: 3px solid orange;
+  background-color: #666362;
+  color: white;
+  /* border-bottom: 3px solid orange; */
 }
 
 /*footer*/
