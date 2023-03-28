@@ -496,6 +496,7 @@ nav input {
 
 /*footer*/
 .footer-distributed {
+  display: flex;
   background: #242526;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -655,6 +656,7 @@ nav input {
 
 @media (max-width: 880px) {
   .footer-distributed {
+    display: block;
     font: bold 14px sans-serif;
   }
 
@@ -741,7 +743,7 @@ nav input {
 
   /*Classes*/
   #sectionAfter {
-    height: 120vh;
+    height: 100vh;
   }
 
   .class-details {
@@ -800,7 +802,7 @@ nav input {
   }
 
   #sectionAfter {
-    height: 130vh;
+    height: 100vh;
   }
 
   .class-details {
