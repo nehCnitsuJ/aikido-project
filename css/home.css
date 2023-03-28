@@ -676,16 +676,6 @@ nav input {
 
 /*Media Queries for mobile devices*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  /* custom scroll bar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f2f2f2;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #666362;
-  }
   /*landscape img section*/
   .text-box {
     padding: 20px;
@@ -741,6 +731,11 @@ nav input {
     padding: 0px 0px 20px 0px;
   }
 
+  .videos-container video {
+    width: 250px;
+    height: 150px;
+  }
+
   /*Classes*/
   #sectionAfter {
     height: 100vh;
@@ -759,16 +754,6 @@ nav input {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  /* custom scroll bar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f2f2f2;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #666362;
-  }
   .welcome-container {
     justify-content: center;
   }
@@ -814,3 +799,39 @@ nav input {
     top: 50px;
   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .text-details {
+    flex-direction: column;
+    height: 750px;
+    justify-content: space-evenly;
+  }
+
+  #mobile-img1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .videos-container {
+    position: relative;
+    flex-direction: column;
+    height: 700px;
+  }
+
+  .videos-container video {
+    width: 400px;
+    height: 200px;
+  }
+
+  #sectionAfter {
+    height: 100vh;
+  }
+
+  #mobile-img2 {
+    position: relative;
+    max-height: 70%;
+    top: 30px;
+  }
+} ;
