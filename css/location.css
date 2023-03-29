@@ -49,6 +49,9 @@ li {
   padding-top: 6rem;
 }
 
+.top-section-po {
+  padding-top: 0rem;
+}
 .top-header {
   margin-bottom: 2rem;
 }
@@ -366,4 +369,18 @@ nav input {
   display: flex;
   flex-direction: row;
   gap: 0.4rem;
+}
+
+/*Partner outlet*/
+#po-location {
+  gap: 2rem;
+}
+
+.contents-container iframe {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
 }
