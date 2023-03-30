@@ -76,7 +76,7 @@ li {
 /*Nav bar css*/
 nav {
   position: fixed;
-  z-index: 2;
+  z-index: 99999;
   width: 100%;
   backdrop-filter: blur(15px) brightness(75%) saturate(70%);
 }
@@ -338,7 +338,7 @@ nav input {
 .container {
   width: 90%;
   max-width: 100%;
-  margin: 1rem 3.125rem;
+  margin: 1rem 3.125rem 3rem 3.125rem;
 }
 
 /*right img left desc*/
@@ -403,51 +403,37 @@ nav input {
   font-weight: 500;
   line-height: 1.5rem;
 }
-/* .img {
-  width: 70%;
-  height: 500px;
-  border-radius: 8px;
-}
-
-#img1 {
-  background: url(/imgs/Cclass1.jpg) no-repeat center / cover;
-}
-.detail {
-  z-index: 20;
-  width: 50%;
-  min-height: 400px;
-  background-color: #f2f2f2;
-  padding: 0.5rem 2rem;
-  border-radius: 8px;
-  color: #666362;
-  margin-left: -9rem;
-}
-.detail h1 {
-  font-weight: lighter;
-}
-.detail p {
-  margin: 1rem 0;
-  font-weight: 500;
-  line-height: 1.5rem;
-}
-
-#opposite {
-  margin-left: 0rem;
-  margin-right: -9rem;
-} */
 
 @media only screen and (max-width: 768px) {
   .container {
     flex-direction: column;
-    width: 100%;
-    margin: 0 1.25rem;
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
   }
   .left-detail-box {
     width: 100%;
     height: 400px;
+    padding: 0rem 2rem;
   }
   .right-img-box {
-    width: 90%;
+    width: 70%;
+    margin: 0;
+    margin-top: -6.25rem;
+  }
+
+  #md-container {
+    flex-direction: column-reverse;
+  }
+
+  .right-detail-box {
+    width: 100%;
+    height: 400px;
+    padding: 0rem 2rem;
+  }
+  .left-img-box {
+    width: 70%;
     margin: 0;
     margin-top: -6.25rem;
   }
