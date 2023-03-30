@@ -393,6 +393,7 @@ nav input {
   width: 50%;
   min-height: 300px;
   margin-left: -9rem;
+  border-radius: 8px;
 }
 
 #img1 {
@@ -429,6 +430,7 @@ nav input {
   width: 50%;
   min-height: 300px;
   margin-right: -9rem;
+  border-radius: 8px;
 }
 
 .right-detail-box {
