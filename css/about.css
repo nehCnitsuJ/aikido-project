@@ -434,9 +434,6 @@ nav input {
   text-align: center;
 }
 
-.card:hover {
-  border-bottom: 3px solid orange;
-}
 h5 {
   color: #666362;
   font-size: 1.3rem;
@@ -632,10 +629,9 @@ h5 {
     margin-left: 0;
   }
 }
-/*Responsiveness for tablet*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
-}
 
-/*Responsiveness for laptop*/
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
+  .desc-container {
+    padding: 1.5rem 2rem;
+  }
 }

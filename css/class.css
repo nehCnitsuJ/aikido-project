@@ -388,7 +388,7 @@ nav input {
   margin-bottom: 1rem;
 }
 
-.attribute-info h4 label {
+.attribute-info h4 a {
   color: #fff;
   font-size: 1em;
   font-weight: 400;
@@ -414,34 +414,19 @@ nav input {
   text-decoration: none;
 }
 
-.btnVS {
-  background-color: aqua;
-  font-size: 0.8rem;
-  font-weight: 500;
-  display: inline-block;
-  padding: 0.7rem 1rem;
-  letter-spacing: 0.1rem;
-  border-radius: 10px;
-  margin-top: 1rem;
-}
-
-#labelTT,
-#btnTT {
+#labelTT {
   background: rgb(214, 52, 23);
 }
 
-#labelCJ,
-#btnCJ {
+#labelCJ {
   background: orange;
 }
 
-#labelCS,
-#btnCS {
+#labelCS {
   background: rgb(197, 197, 7);
 }
 
-#labelYA,
-#btnYA {
+#labelYA {
   background: #242526;
 }
 
