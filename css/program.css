@@ -46,6 +46,10 @@ li {
   padding-bottom: 0rem;
 }
 
+.los-top-section {
+  padding-top: 0rem;
+}
+
 .section-headers {
   flex-direction: column;
   margin-bottom: 2rem;
@@ -420,8 +424,18 @@ nav input {
 }
 
 .desc-box a {
-  color: rgb(54, 214, 22);
+  color: #b7cc00;
   font-weight: 300;
+}
+
+#more-info {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#more-info a {
+  font-weight: normal;
+  color: #b7cc00;
 }
 
 /*left img right desc -> OPPOSITE*/
@@ -440,6 +454,202 @@ nav input {
   padding: 0.5rem 2rem 0.5rem 11rem;
   background-color: #f2f2f2;
   color: #666362;
+}
+
+/*List of schools*/
+.los-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0rem 4rem;
+}
+
+.los-container-header h1 {
+  font-size: 1.5rem;
+}
+
+.los-container li {
+  line-height: 2rem;
+}
+
+/*footer*/
+.footer-distributed {
+  display: flex;
+  background: #242526;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: orange;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+/*CHANGE TO LOGO WHEN HAVE ACCESS*/
+.footer-distributed h3 span {
+  color: orange;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #fff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 39%;
+}
+
+.footer-distributed .footer-center i {
+  color: #fff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 42px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.bi-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: orange;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* .footer-distributed .footer-links .link-1:before {
+    content: none;
+  } */
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Responsive for footer*/
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    display: block;
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
