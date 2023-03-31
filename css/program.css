@@ -401,9 +401,28 @@ nav input {
 }
 
 #img1 {
-  background: url(/imgs/Cclass1.jpg) no-repeat center / cover;
+  background: url(/imgs/PSEPimg.JPG) no-repeat center / cover;
 }
 
+#img2 {
+  background: url(/imgs/PALpic.JPG) no-repeat center / cover;
+}
+
+#img3 {
+  background: url(/imgs/CCAimg.JPG) no-repeat center / cover;
+}
+
+#img4 {
+  background: url(/imgs/SHApic.jpg) no-repeat center / cover;
+}
+
+#img5 {
+  background: url(/imgs/SEVpic.jpg) no-repeat center / cover;
+}
+
+#img6 {
+  background: url(/imgs/aikisports.png) no-repeat center / cover;
+}
 /*Description sections*/
 .desc-box {
   display: flex;
@@ -501,7 +520,7 @@ nav input {
 
 .footer-distributed h3 {
   color: orange;
-  font: normal 36px "Open Sans", cursive;
+  font-size: 3rem;
   margin: 0;
 }
 
