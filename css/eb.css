@@ -36,6 +36,19 @@ li {
   margin-right: auto;
   padding: 3rem 2rem 2rem;
 }
+.top-section {
+  padding-top: 6rem;
+}
+
+.top-header {
+  margin-bottom: 2rem;
+}
+
+.section-headers span {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #666362;
+}
 
 #sectionAfter {
   background-color: #f2f2f2;
@@ -330,7 +343,7 @@ nav input {
   background: #fff;
   border-bottom: 3px solid orange;
 }
-.box-container a {
+.content {
   color: #666362;
 }
 
@@ -511,23 +524,5 @@ nav input {
 
   .footer-distributed .footer-center i {
     margin-left: 0;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 499px) {
-  .box-container {
-    padding-top: 5rem;
-    flex-direction: column;
-  }
-}
-
-@media only screen and (min-width: 500px) and (max-width: 860px) {
-  .box-container {
-    padding-top: 5rem;
-    flex-direction: column;
-  }
-
-  .box {
-    width: 70%;
   }
 }
