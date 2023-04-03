@@ -402,15 +402,15 @@ nav input {
 }
 
 #img1 {
-  background: url(/imgs/PSEPimg.JPG) no-repeat center / cover;
+  background: url(/imgs/TIWpic.jpg) no-repeat center / cover;
 }
 
 #img2 {
-  background: url(/imgs/PALpic.JPG) no-repeat center / cover;
+  background: url(/imgs/DTpic.jpg) no-repeat center / cover;
 }
 
 #img3 {
-  background: url(/imgs/CCAimg.JPG) no-repeat center / cover;
+  background: url(/imgs/SCAPEpic.jpg) no-repeat center / cover;
 }
 
 /*Description sections*/
@@ -699,7 +699,11 @@ nav input {
   }
 
   #smaller {
-    height: 700px;
+    height: 70vh;
+  }
+
+  #smaller3 {
+    height: 60vh;
   }
 
   #bigger {
@@ -759,6 +763,9 @@ nav input {
     height: 65vh;
   }
 
+  #smaller3 {
+    height: 60vh;
+  }
   #bigger {
     height: 137vh;
   }
@@ -811,6 +818,10 @@ nav input {
 
   #smaller {
     height: 65vh;
+  }
+
+  #smaller3 {
+    height: 40vh;
   }
 
   #bigger {
