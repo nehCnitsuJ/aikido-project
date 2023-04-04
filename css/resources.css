@@ -343,15 +343,28 @@ nav input {
   display: none;
 }
 
+/*Download button + container*/
 .btnSU {
   color: #242526;
-  border-bottom: 3px solid red;
+  border-bottom: 0.3em solid red;
   font-size: 0.8rem;
   font-weight: 500;
   display: inline-block;
   padding: 1rem 1.2rem;
   letter-spacing: 1px;
   border-radius: 10px;
+}
+
+#BLBG {
+  border-bottom: 0.3em solid rgba(0, 102, 255, 0.897);
+}
+
+#BRBG {
+  border-bottom: 0.3em solid rgb(97, 32, 32);
+}
+
+#JBJD {
+  border-bottom: 0.3em solid black;
 }
 
 #video-section {
@@ -553,8 +566,12 @@ nav input {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .desc-container {
-    padding: 1.5rem 2rem;
+@media only screen and (min-width: 500px) {
+  .videos-container {
+    gap: 3rem;
+  }
+
+  .videos-container video {
+    width: 80%;
   }
 }
