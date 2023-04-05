@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aikiForest</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link
       rel="stylesheet"
@@ -85,46 +86,47 @@
       </div>
     </div>
 
+    <!--Section header-->
     <section class="section about-section">
-      <div class="about-container flex-center">
-        <div class="section-headers flex-center">
-          <span>About Aikido</span>
-        </div>
+      <div class="section-headers flex-center">
+        <span>About Aikido</span>
+      </div>
+    </section>
 
-        <div class="text-details flex-center" id="about-text-details">
-          <div id="mobile-img1">
-            <img src="imgs/about-img.jpg" />
-          </div>
-          <p id="about-p">
-            Aikido is a Japanese self-defense martial arts which is often
-            translated as "the way of harmonious spirit". The primary goal of
-            aikido is to overcome oneself instead of cultivating violence and
-            aggressivess, said by the founder of Aikido - Ueshiba Morihei. This
-            involves throwing and twisting techniques which aims in turning the
-            attacker's momentum against himself. Watch the following videos
-            below by our Principal, parents and students about learning aikido
-            at aikiForest.
-          </p>
+    <section class="section about-section">
+      <div class="text-details flex-center" id="about-text-details">
+        <div class="aboutimg-container flex-center">
+          <img src="imgs/about-img.jpg" />
         </div>
+        <p id="about-p">
+          Aikido is a Japanese self-defense martial arts which is often
+          translated as "the way of harmonious spirit". The primary goal of
+          aikido is to overcome oneself instead of cultivating violence and
+          aggressivess, said by the founder of Aikido - Ueshiba Morihei. This
+          involves throwing and twisting techniques which aims in turning the
+          attacker's momentum against himself. Watch the following videos below
+          by our Principal, parents and students about learning aikido at
+          aikiForest.
+        </p>
       </div>
     </section>
 
     <!--Aikido Videos Section-->
     <section class="section" id="video-section">
-      <div class="videos-container">
-        <div class="video-card">
+      <div class="videos-container flex-center">
+        <div class="video-card flex-center">
           <video controls>
             <source src="videos/student.mp4" type="video/mp4" />
           </video>
         </div>
 
-        <div class="video-card">
+        <div class="video-card flex-center">
           <video controls>
             <source src="videos/student.mp4" type="video/mp4" />
           </video>
         </div>
 
-        <div class="video-card">
+        <div class="video-card flex-center">
           <video controls>
             <source src="videos/student.mp4" type="video/mp4" />
           </video>
@@ -132,27 +134,30 @@
       </div>
     </section>
 
+    <!--Section header-->
+    <section class="section about-section" id="sectionAfter">
+      <div class="section-headers flex-center">
+        <span>Classes</span>
+      </div>
+    </section>
+
+    <!--Class section-->
     <section class="section" id="sectionAfter">
-      <div class="about-container flex-center">
-        <div class="section-headers flex-center">
-          <span>Classes</span>
+      <div class="class-container text-details">
+        <div class="class-details">
+          <p id="about-p-c">
+            At aikiForest, we offer various of classes ranging from children to
+            youth & adult classes. Students will be able to learn movement &
+            technique fundamentals from basic to advance levels based on their
+            age groups.
+          </p>
+          <a href="#" id="class-a"
+            >View All <i class="bi bi-arrow-right"></i
+          ></a>
+          <a href="#" class="trial-btn">Book a trial class now!</a>
         </div>
-        <div class="text-details flex-center">
-          <div class="class-details">
-            <p>
-              At aikiForest, we offer various of classes ranging from children
-              to youth & adult classes. Students will be able to learn movement
-              & technique fundamentals from basic to advance levels based on
-              their age groups.
-            </p>
-            <a href="#" id="class-a"
-              >View All <i class="bi bi-arrow-right"></i
-            ></a>
-            <a href="#" class="trial-btn">Book a trial class now!</a>
-          </div>
-          <div id="mobile-img2">
-            <img src="imgs/Cclass3.jpg" />
-          </div>
+        <div class="aboutimg-container flex-center">
+          <img src="imgs/Cclass3.jpg" />
         </div>
       </div>
     </section>
@@ -163,7 +168,6 @@
         <h3>aikiForest</h3>
 
         <p class="footer-links">
-          <!-- <a href="#" class="link-1">Home</a> -->
           <a href="promotion.html">Promotions</a>
           <a href="location.html">Locations</a>
           <a href="about.html">About</a>
@@ -220,6 +224,7 @@
         </div>
       </div>
     </footer>
+
     <script src="js/general.js"></script>
     <script src="js/home.js"></script>
   </body>
