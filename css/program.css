@@ -3,7 +3,7 @@
 }
 
 .top-section-p {
-  padding-top: 6rem;
+  padding-top: 8rem;
   padding-bottom: 0rem;
 }
 
@@ -18,6 +18,11 @@
 
 #PSE-header {
   margin-bottom: 0rem;
+}
+
+hr.dashed {
+  margin: 3rem 4rem;
+  border-top: 2px solid #f2f2f2;
 }
 .section-headers span {
   font-size: 1.1rem;
@@ -69,7 +74,7 @@
   margin-bottom: 0rem;
 }
 .description p {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.5rem;
 }
@@ -129,7 +134,7 @@
 }
 
 .desc-box span {
-  font-size: 1.1;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -405,13 +410,18 @@
     flex-direction: row;
     width: 90%;
     margin: auto;
-    padding-top: 1rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
   }
 
   .description {
     justify-content: center;
     height: 100%;
+    padding-right: 2rem;
+  }
+
+  .desc-box {
+    padding: 0rem 4rem;
   }
   .left-detail-box {
     width: 100%;
@@ -455,13 +465,18 @@
     flex-direction: row;
     width: 90%;
     margin: auto;
-    padding-top: 1rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
   }
 
   .description {
     justify-content: center;
     height: 100%;
+    padding-right: 2rem;
+  }
+
+  .desc-box {
+    padding: 0rem 4rem;
   }
 
   .left-detail-box {
@@ -506,12 +521,17 @@
     flex-direction: row;
     width: 90%;
     margin: auto;
-    padding-top: 1rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
   }
   .description {
     justify-content: center;
+    padding-right: 2rem;
     height: 100%;
+  }
+
+  .desc-box {
+    padding: 0rem 4rem;
   }
   .left-detail-box {
     width: 100%;
