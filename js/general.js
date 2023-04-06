@@ -26,10 +26,3 @@ scrollTopBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
-
-//whatsapp button
-const whatsappBtn = document.querySelector(".wa-btn");
-
-window.addEventListener("scroll", function () {
-  whatsappBtn.classList.toggle("active", window.scrollY > 500);
-});
