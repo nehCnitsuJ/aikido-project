@@ -105,6 +105,9 @@
   max-height: 100%;
   display: block;
 }
+.aboutimg-container img {
+  border-radius: 10px;
+}
 
 #about-p {
   letter-spacing: 0.094rem;
@@ -170,10 +173,6 @@
 
   .aboutimg-container {
     height: 40vh;
-  }
-
-  .aboutimg-container img {
-    border-radius: 10px;
   }
 
   #about-p {
