@@ -15,7 +15,7 @@
 /*Download button + container*/
 .btnSU {
   color: #242526;
-  border-bottom: 0.3em solid red;
+  border-bottom: 0.3em solid black;
   font-size: 0.8rem;
   font-weight: 500;
   display: inline-block;
@@ -30,10 +30,6 @@
 
 #BRBG {
   border-bottom: 0.3em solid rgb(97, 32, 32);
-}
-
-#JBJD {
-  border-bottom: 0.3em solid black;
 }
 
 #video-section {
