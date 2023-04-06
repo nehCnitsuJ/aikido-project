@@ -143,7 +143,7 @@ li {
 /*Nav bar css*/
 nav {
   position: fixed;
-  z-index: 2;
+  z-index: 9998;
   width: 100%;
   backdrop-filter: blur(15px) brightness(75%) saturate(70%);
 }
