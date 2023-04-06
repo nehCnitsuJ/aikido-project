@@ -24,6 +24,73 @@ li {
   list-style-type: none;
 }
 
+/*Scroll To Top Btn*/
+.scrollToTop-btn {
+  z-index: 99999;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  width: 35px;
+  height: 35px;
+  background: orange;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.scrollToTop-btn.active {
+  right: 20px;
+  pointer-events: all;
+  opacity: 1;
+}
+
+/*Whatsapp button*/
+.wa-btn {
+  z-index: 99999;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  max-width: 32px;
+  height: 32px;
+  background-color: green;
+  color: white;
+  border-radius: 60px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+}
+
+.wa-btn:hover {
+  max-width: 300px;
+}
+
+.wa-btn.active {
+  left: 20px;
+  pointer-events: all;
+  opacity: 1;
+}
+
+#icon {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-right: 0.938rem;
+  padding: 0rem 0.5rem;
+}
+
+.text {
+  white-space: nowrap;
+  padding-right: 0.938rem;
+}
+
+/*Container + Sections*/
 .flex-center {
   display: flex;
   justify-content: center;
