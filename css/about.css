@@ -78,6 +78,10 @@
   line-height: 1.4rem;
 }
 
+.desc-container h1 span {
+  color: #b7cc00;
+}
+
 .desc-container span {
   font-weight: 600;
 }
