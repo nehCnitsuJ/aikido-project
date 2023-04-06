@@ -69,11 +69,11 @@
   justify-content: space-evenly;
   width: 100%;
   gap: 1rem;
-  padding-top: 1.5rem;
+  padding: 3rem;
 }
 
 .desc-container p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.1rem;
   line-height: 1.4rem;
 }
