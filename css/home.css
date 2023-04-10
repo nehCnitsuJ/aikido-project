@@ -141,6 +141,15 @@
   gap: 1.5rem;
 }
 
+.class-details span {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.class-details span #highlight {
+  color: #b7cc00;
+}
+
 .class-container {
   display: flex;
   justify-content: center;
