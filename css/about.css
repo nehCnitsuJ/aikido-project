@@ -69,7 +69,7 @@
   justify-content: space-evenly;
   width: 100%;
   gap: 1rem;
-  padding: 3rem;
+  padding: 1.5rem;
 }
 
 .desc-container p {
@@ -88,6 +88,17 @@
 
 .desc-container a {
   color: orange;
+}
+
+#highlight {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#highlight-g {
+  font-size: 1.6rem;
+  color: #b7cc00;
+  font-weight: 700;
 }
 
 .values-section {
@@ -129,3 +140,9 @@ h5 {
 .card-content i {
   font-size: 3em;
 }
+
+@media only screen and (min-width: 800px) and (max-width: 919px) {
+  .values-mini-container {
+    width: 80%;
+  }
+} ;
