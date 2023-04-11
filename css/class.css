@@ -26,7 +26,7 @@
   justify-content: space-evenly;
   width: 100%;
   gap: 1rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem;
 }
 
 .desc-container p {
@@ -171,26 +171,26 @@
 }
 
 /*Responsiveness for tablet*/
-@media screen and (min-width: 768px) and (max-width: 899px) {
+@media only screen and (min-width: 768px) and (max-width: 899px) {
   #attribute-YA {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 
-@media screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   #attribute-YA {
     grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
   }
 }
 
-@media screen and (min-width: 936px) and (max-width: 1023px) {
+@media only screen and (min-width: 936px) and (max-width: 1023px) {
   .class-imgs-container {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   }
 }
 
 /*Responsiveness for laptop*/
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .attribute-info {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   }
@@ -198,13 +198,13 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
-@media screen and (min-width: 1122px) and (max-width: 1439px) {
+@media only screen and (min-width: 1122px) and (max-width: 1439px) {
   .attribute-info {
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   }
 }
 
-@media screen and (min-width: 1336px) and (max-width: 1439px) {
+@media only screen and (min-width: 1336px) and (max-width: 1439px) {
   .attribute-info {
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   }
@@ -213,11 +213,26 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .attribute-info {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
   .class-imgs-container {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+  .desc-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1736px) {
+  .attribute-info {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+  #attribute-YA {
+    grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+  }
+  .class-imgs-container {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   }
 }
