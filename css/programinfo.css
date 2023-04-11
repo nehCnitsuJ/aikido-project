@@ -1,0 +1,59 @@
+.desc-section {
+  padding-top: 7rem;
+}
+
+.section-top {
+  padding-top: 0rem;
+}
+
+.desc-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+  padding: 0rem 4rem;
+}
+
+.desc-box p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.desc-box a {
+  color: orange;
+  font-weight: 300;
+}
+
+#highlight {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#highlight-g {
+  font-size: 2rem;
+  color: #b7cc00;
+  font-weight: 700;
+}
+
+/*List of schools*/
+.los-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0rem 4rem;
+}
+
+.los-container-header h1 {
+  font-size: 1.5rem;
+}
+
+.los-container li {
+  line-height: 2rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .desc-box,
+  .los-container {
+    padding: 0rem 2rem;
+  }
+}

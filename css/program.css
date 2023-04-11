@@ -128,19 +128,13 @@
   font-size: 1.1rem;
   line-height: 1.5rem;
 }
-
-.desc-box span {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
 .desc-box a {
-  color: #b7cc00;
+  color: orange;
   font-weight: 300;
 }
 
 #more-info {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
@@ -167,20 +161,15 @@
   color: #666362;
 }
 
-/*List of schools*/
-.los-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0rem 4rem;
+#highlight {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.los-container-header h1 {
-  font-size: 1.5rem;
-}
-
-.los-container li {
-  line-height: 2rem;
+#highlight-g {
+  font-size: 2rem;
+  color: #b7cc00;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 766px) {
@@ -191,12 +180,12 @@
     flex-direction: column;
     width: 80%;
     margin: auto;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
   }
   .left-detail-box {
     width: 100%;
-    height: 110vh;
+    height: 85vh;
     padding: 0rem 2rem;
   }
   .right-img-box {
@@ -221,19 +210,11 @@
   }
 
   #smaller {
-    height: 700px;
+    height: 70vh;
   }
 
   #bigger {
-    height: 1400px;
-  }
-
-  .los-container {
-    padding: 0rem;
-  }
-
-  .los-container h1 {
-    font-size: 1rem;
+    height: 150vh;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 424px) {
@@ -248,8 +229,8 @@
     flex-direction: column;
     width: 80%;
     margin: auto;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
   }
   .left-detail-box {
     width: 100%;
@@ -259,7 +240,7 @@
   .right-img-box {
     width: 90%;
     margin: 0;
-    margin-top: -1.25rem;
+    margin-top: -4.25rem;
   }
 
   #md-container {
@@ -274,7 +255,7 @@
   .left-img-box {
     width: 90%;
     margin: 0;
-    margin-top: -1.25rem;
+    margin-top: -4.25rem;
   }
 
   #smaller {
@@ -284,26 +265,22 @@
   #bigger {
     height: 137vh;
   }
-
-  .los-container {
-    padding: 0rem;
-  }
-
-  .los-container h1 {
-    font-size: 1rem;
-  }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 599px) {
   #secondline {
     font-size: 0.8rem;
   }
+  .description {
+    justify-content: center;
+    height: 100%;
+  }
   .container {
     flex-direction: column;
     width: 80%;
     margin: auto;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
   }
   .left-detail-box {
     width: 100%;
@@ -338,26 +315,22 @@
   #bigger {
     height: 130vh;
   }
-
-  .los-container {
-    padding: 0rem;
-  }
-
-  .los-container h1 {
-    font-size: 1rem;
-  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 766px) {
   #secondline {
     font-size: 0.8rem;
   }
+  .description {
+    justify-content: center;
+    height: 80%;
+  }
   .container {
     flex-direction: column;
     width: 80%;
     margin: auto;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
   }
   .left-detail-box {
     width: 100%;
@@ -391,14 +364,6 @@
 
   #bigger {
     height: 105vh;
-  }
-
-  .los-container {
-    padding: 0rem;
-  }
-
-  .los-container h1 {
-    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -450,10 +415,6 @@
   #bigger {
     height: 105vh;
   }
-
-  .los-container h1 {
-    font-size: 1.5rem;
-  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1198px) {
@@ -461,8 +422,8 @@
     flex-direction: row;
     width: 90%;
     margin: auto;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
   }
 
   .description {
@@ -506,10 +467,6 @@
   #bigger {
     height: 96vh;
   }
-
-  .los-container h1 {
-    font-size: 1.5rem;
-  }
 }
 
 @media only screen and (min-width: 1199px) {
@@ -524,14 +481,30 @@
     justify-content: center;
     padding-right: 2rem;
     height: 100%;
+    gap: 2rem;
   }
 
+  .description h1 {
+    font-size: 2.5rem;
+  }
+  .description p,
+  .description span,
+  .description li {
+    font-size: 1.3rem;
+  }
+  .description p {
+    line-height: 1.8rem;
+  }
+
+  .description ul {
+    line-height: 1.8rem;
+  }
   .desc-box {
     padding: 0rem 4rem;
   }
   .left-detail-box {
     width: 100%;
-    height: 60vh;
+    max-height: 50vh;
     padding: 0rem 6rem 0rem 2rem;
   }
   .right-img-box {
@@ -549,15 +522,15 @@
     padding: 0rem 2rem 0rem 8rem;
   }
   .left-img-box {
-    width: 70%;
+    width: 50%;
     margin: 0;
     margin-right: -6.25rem;
   }
   #smaller {
-    height: 60vh;
+    max-height: 50vh;
   }
 
   #bigger {
-    height: 103vh;
+    height: 95vh;
   }
 }
