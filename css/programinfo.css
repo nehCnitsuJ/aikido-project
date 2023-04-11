@@ -6,12 +6,19 @@
   padding-top: 0rem;
 }
 
+.los-top-section {
+  padding-top: 0rem;
+}
 .desc-box {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 1.5rem;
   padding: 0rem 4rem;
+}
+
+.desc-box span {
+  font-weight: 700;
 }
 
 .desc-box p {
@@ -55,5 +62,11 @@
   .desc-box,
   .los-container {
     padding: 0rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .desc-box {
+    width: 70%;
   }
 }
