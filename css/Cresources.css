@@ -7,14 +7,9 @@
   padding-top: 0rem;
 }
 
-/*displays*/
-/* #gr {
-  display: none;
+.hidden {
+  display: none !important;
 }
-
-#hbl {
-  display: none;
-} */
 
 .button-container {
   flex-direction: column;
@@ -36,7 +31,7 @@ button {
   border-radius: 10px;
 }
 
-.focus:focus {
+.focus {
   background-color: black;
   color: #fff;
 }
