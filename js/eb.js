@@ -1,8 +1,8 @@
-function openBelt() {
-  var belt = document.getElementById("#video-section");
-  if (belt.style.display === "none") {
-    belt.style.display = "block";
+function hide() {
+  var x = document.getElementById("eb");
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-    belt.style.display = "none";
+    x.style.display = "none";
   }
 }

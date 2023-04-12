@@ -64,15 +64,18 @@
       </div>
     </nav>
 
-    <!--Belt tying-->
     <section class="section top-section">
-      <div class="section-headers flex-center">
-        <span>How To Tie Belt</span>
+      <div class="button-container flex-center">
+        <button onclick="hide()" class="btnSU focus">Essential Basics</button>
+        <button onclick="hide()" class="btnSU focus">Grading Revision</button>
+        <button onclick="hide()" class="btnSU focus">
+          Home-Based Learning
+        </button>
       </div>
     </section>
 
-    <!--Belt tying Videos Section-->
-    <section class="section" id="video-section">
+    <!--Essential Basics-->
+    <section class="section video-section" id="eb">
       <div class="videos-container flex-center">
         <div class="video-card flex-center">
           <span>Tie for yourself</span>
@@ -81,28 +84,6 @@
           </video>
         </div>
 
-        <div class="video-card flex-center">
-          <span>Tie for someone else</span>
-          <video controls>
-            <source src="videos/student.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-    </section>
-
-    <!--Section Divider-->
-    <hr class="dashed" />
-
-    <!--improve your technique-->
-    <section class="section">
-      <div class="section-headers flex-center">
-        <span>Improve Your Technique</span>
-      </div>
-    </section>
-
-    <!--Improve your technique Section-->
-    <section class="section" id="video-section">
-      <div class="videos-container flex-center">
         <div class="video-card flex-center">
           <span>Rocking Exercise</span>
           <video controls>
@@ -122,6 +103,47 @@
           <video controls>
             <source src="videos/student.mp4" type="video/mp4" />
           </video>
+        </div>
+      </div>
+    </section>
+
+    <!--Grading Revision-->
+    <!--Home-Based Learning-->
+    <section class="section" id="hbl">
+      <div class="videos-container flex-center">
+        <div class="video-card flex-center">
+          <video controls>
+            <source src="videos/student.mp4" type="video/mp4" />
+          </video>
+          <p>
+            HOME-BASED LEARNING SECTION Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged.
+            It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum.
+          </p>
+        </div>
+
+        <div class="video-card flex-center">
+          <video controls>
+            <source src="videos/student.mp4" type="video/mp4" />
+          </video>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
         </div>
       </div>
     </section>
@@ -189,7 +211,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/eb.js"></script>
     <script src="js/general.js"></script>
   </body>
 </html>
