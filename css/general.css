@@ -442,14 +442,13 @@ nav input {
 
 .footer-distributed .footer-links {
   color: #fff;
-  margin: 20px 0 12px;
+  margin: 0.6rem 0rem;
   padding: 0;
 }
 
 .footer-distributed .footer-links a {
-  display: flex;
   font-size: 1.3em;
-  line-height: 1.4;
+  line-height: 1;
   letter-spacing: 0.05em;
   font-weight: 400;
   text-decoration: none;
@@ -457,7 +456,6 @@ nav input {
 }
 
 .footer-distributed .footer-company-name {
-  display: flex;
   color: #fff;
   font-size: 14px;
   font-weight: normal;
@@ -576,6 +574,7 @@ nav input {
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
+    padding: 0;
   }
 
   .footer-distributed .footer-center i {
