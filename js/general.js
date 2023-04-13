@@ -1,9 +1,14 @@
+//Get NavBar
+$.get("nav.html", function (data) {
+  $("#navBar").replaceWith(data);
+});
+
 //Sticky navbar
 window.onscroll = function () {
   stickyscroll();
 };
 
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById("navBar");
 
 var sticky = navbar.offsetTop;
 
