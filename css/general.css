@@ -175,6 +175,12 @@ nav .wrapper {
   color: #fff;
   font-size: 30px;
 }
+#keyline {
+  margin-top: 2rem;
+  margin-left: 6rem;
+  width: 55px;
+  height: 55px;
+}
 .wrapper .nav-links {
   display: inline-flex;
 }
@@ -415,6 +421,10 @@ nav input {
   padding: 55px 50px;
 }
 
+.footer-distributed .footer-left {
+  padding-left: 4rem;
+}
+
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
@@ -425,20 +435,7 @@ nav input {
 /* Footer left */
 
 .footer-distributed .footer-left {
-  width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3 {
-  color: orange;
-  font-size: 3rem;
-  margin: 0;
-}
-
-/*CHANGE TO LOGO WHEN HAVE ACCESS*/
-.footer-distributed h3 span {
-  color: orange;
+  width: 35%;
 }
 
 /* Footer links */
@@ -450,14 +447,17 @@ nav input {
 }
 
 .footer-distributed .footer-links a {
-  display: inline-block;
-  line-height: 1.8;
+  display: flex;
+  font-size: 1.3em;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
   font-weight: 400;
   text-decoration: none;
   color: inherit;
 }
 
 .footer-distributed .footer-company-name {
+  display: flex;
   color: #fff;
   font-size: 14px;
   font-weight: normal;
@@ -505,7 +505,7 @@ nav input {
   text-decoration: none;
 }
 
-.footer-distributed .footer-links a:before {
+/* .footer-distributed .footer-links a:before {
   content: "|";
   font-weight: 300;
   font-size: 20px;
@@ -513,7 +513,7 @@ nav input {
   color: #fff;
   display: inline-block;
   padding-right: 5px;
-}
+} */
 
 /* .footer-distributed .footer-links .link-1:before {
       content: none;
