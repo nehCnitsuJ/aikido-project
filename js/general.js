@@ -31,3 +31,8 @@ scrollTopBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+//Get footer
+$.get("footer.html", function (data) {
+  $("#footer").replaceWith(data);
+});
