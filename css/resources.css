@@ -1,6 +1,5 @@
 .top-section-jgs {
   padding-top: 6rem;
-  padding-bottom: 0rem;
 }
 
 .top-header {
@@ -32,7 +31,7 @@
   border-bottom: 0.3em solid rgb(97, 32, 32);
 }
 
-#video-section {
+.video-section {
   padding-top: 0rem;
   padding-bottom: 2rem;
 }
