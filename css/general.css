@@ -455,6 +455,10 @@ nav input {
   color: inherit;
 }
 
+.footer-distributed .footer-links a:hover {
+  color: orange;
+}
+
 .footer-distributed .footer-company-name {
   color: #fff;
   font-size: 14px;
