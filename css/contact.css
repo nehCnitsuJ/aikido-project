@@ -6,3 +6,148 @@
   left: 20px;
   opacity: 1;
 }
+
+/*=======Contact section=======*/
+.container {
+  position: relative;
+  flex-direction: column;
+}
+
+.sectionCTC {
+  position: relative;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8rem 2rem 4rem;
+}
+
+.contact .container .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-left h2 {
+  font-size: 2.1em;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.contact-left h2 span {
+  color: #b7cc00;
+}
+
+.contact-left .HO-contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-right p {
+  color: #f2f2f2;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+}
+
+.contact-right h2 {
+  font-size: 2rem;
+  color: black;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  color: black;
+  background: #f2f2f2;
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding: 15px 40px 40px 20px;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  resize: none;
+}
+
+::placeholder {
+  color: black;
+}
+
+.contact-form .first-row input {
+  width: 100%;
+}
+
+.contact-form .second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form .second-row input {
+  width: 48%;
+}
+
+.btnSU {
+  color: #fff;
+  background-color: #b7cc00;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  width: 140px;
+}
+
+.contact-form .btnSU {
+  border: none;
+  margin-top: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*=======Media query max-width 1070px=======*/
+@media screen and (max-width: 1070px) {
+  .contact .content {
+    flex-direction: column-reverse;
+    font-size: 0.9rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .contact .contact-left {
+    margin-bottom: 40px;
+  }
+
+  .contact-form .second-row {
+    flex-direction: column;
+  }
+
+  .contact-form .second-row input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .contact .content {
+    flex-direction: column-reverse;
+    font-size: 0.9rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .contact .contact-left {
+    margin-bottom: 40px;
+  }
+
+  .contact-form .second-row {
+    flex-direction: column;
+  }
+
+  .contact-form .second-row input {
+    width: 100%;
+  }
+} ;
