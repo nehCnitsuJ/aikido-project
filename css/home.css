@@ -106,7 +106,7 @@
   display: block;
 }
 .aboutimg-container img {
-  border-radius: 10px;
+  border-radius: 0.7rem;
 }
 
 #about-p {
@@ -138,6 +138,7 @@
 .class-details {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
 }
 
@@ -243,12 +244,18 @@
 
 @media only screen and (min-width: 1100px) {
   .text-box {
-    margin: 15rem 25rem 0rem 17rem;
+    margin: 10rem 25rem 0rem 17rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .text-box {
-    margin: 15rem 35rem 0rem 23rem;
+    margin: 10rem 35rem 0rem 23rem;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .text-box {
+    margin: 10rem 49rem 0rem 23rem;
   }
 }
