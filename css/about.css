@@ -152,17 +152,6 @@
   color: orange;
 }
 
-#highlight {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
-#highlight-g {
-  font-size: 1.6rem;
-  color: #b7cc00;
-  font-weight: 700;
-}
-
 .values-section {
   flex-direction: column;
   gap: 1rem;

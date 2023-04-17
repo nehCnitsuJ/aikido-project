@@ -24,6 +24,25 @@ li {
   list-style-type: none;
 }
 
+img,
+iframe,
+video {
+  border-radius: 0.7em;
+}
+
+span {
+  font-weight: 700;
+}
+
+#highlight {
+  font-size: 1.6rem;
+}
+
+#highlight-g {
+  font-size: 1.6rem;
+  color: #b7cc00;
+}
+
 /*Scroll To Top Btn*/
 .scrollToTop-btn {
   z-index: 99999;
@@ -261,7 +280,7 @@ nav .wrapper {
   padding: 0px;
   padding: 0 20px;
   color: #666362;
-  font-size: 14px;
+  font-size: 15px;
   display: block;
 }
 .row .mega-links li a:hover {
