@@ -21,10 +21,6 @@
   margin-bottom: 2rem;
 }
 
-#WO-header {
-  margin-bottom: 0rem;
-}
-
 /*Layout design*/
 #layout {
   min-height: 70vh;
@@ -46,10 +42,6 @@
   color: #666362;
 }
 
-#smaller {
-  height: 65vh;
-}
-
 .description {
   display: flex;
   flex-direction: column;
@@ -62,20 +54,17 @@
   margin-bottom: 0rem;
 }
 .description p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
+  text-align: justify;
+  text-align-last: left;
 }
 
-.description a {
-  font-size: 1.1rem;
-  color: #f90042;
+#cs {
+  color: orange;
 }
 
-.description ul {
-  line-height: 1.5rem;
-  font-weight: 700;
-}
 .right-img-box {
   z-index: 20;
   width: 50%;
@@ -120,16 +109,6 @@
   font-weight: 300;
 }
 
-#more-info {
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-#more-info a {
-  font-weight: normal;
-  color: #b7cc00;
-}
-
 /*left img right desc -> OPPOSITE*/
 .left-img-box {
   z-index: 20;
@@ -165,9 +144,6 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 766px) {
-  #secondline {
-    font-size: 0.8rem;
-  }
   .container {
     flex-direction: column;
     width: 80%;
@@ -175,6 +151,12 @@
     padding-top: 1rem;
     padding-bottom: 3rem;
   }
+
+  .description {
+    justify-content: center;
+    height: 100%;
+  }
+
   .left-detail-box {
     width: 100%;
     height: 110vh;
@@ -183,7 +165,7 @@
   .right-img-box {
     width: 90%;
     margin: 0;
-    margin-top: -6.25rem;
+    margin-top: -4.25rem;
   }
 
   #md-container {
@@ -198,19 +180,16 @@
   .left-img-box {
     width: 90%;
     margin: 0;
-    margin-top: -6.25rem;
+    margin-top: -4.25rem;
   }
 
-  #smaller {
-    height: 70vh;
+  #rdb-iw,
+  #ldb-dt {
+    height: 600px;
   }
 
-  #smaller3 {
-    height: 60vh;
-  }
-
-  #bigger {
-    height: 1400px;
+  #rdb-ve {
+    height: 500px;
   }
 
   .los-container {
@@ -222,9 +201,6 @@
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 424px) {
-  #secondline {
-    font-size: 0.8rem;
-  }
   .description {
     justify-content: center;
     height: 100%;
@@ -238,7 +214,6 @@
   }
   .left-detail-box {
     width: 100%;
-    height: 80vh;
     padding: 0rem 2rem;
   }
   .right-img-box {
@@ -262,15 +237,17 @@
     margin-top: -1.25rem;
   }
 
-  #smaller {
-    height: 65vh;
+  #img3 {
+    margin-top: -2.25rem;
   }
 
-  #smaller3 {
-    height: 60vh;
+  #rdb-iw,
+  #ldb-dt {
+    height: 450px;
   }
-  #bigger {
-    height: 137vh;
+
+  #rdb-ve {
+    height: 350px;
   }
 
   .los-container {
@@ -283,9 +260,6 @@
 }
 
 @media only screen and (min-width: 425px) and (max-width: 599px) {
-  #secondline {
-    font-size: 0.8rem;
-  }
   .container {
     flex-direction: column;
     width: 80%;
@@ -293,6 +267,7 @@
     padding-top: 1rem;
     padding-bottom: 3rem;
   }
+
   .left-detail-box {
     width: 100%;
     height: 82vh;
@@ -301,7 +276,11 @@
   .right-img-box {
     width: 90%;
     margin: 0;
-    margin-top: -6.25rem;
+    margin-top: -3.25rem;
+  }
+
+  #img3 {
+    margin-top: -4.25rem;
   }
 
   #md-container {
@@ -319,16 +298,13 @@
     margin-top: -3.25rem;
   }
 
-  #smaller {
-    height: 65vh;
+  #rdb-iw,
+  #ldb-dt {
+    height: 500px;
   }
 
-  #smaller3 {
-    height: 40vh;
-  }
-
-  #bigger {
-    height: 130vh;
+  #rdb-ve {
+    height: 400px;
   }
 
   .los-container {
@@ -351,15 +327,15 @@
     padding-top: 1rem;
     padding-bottom: 3rem;
   }
+
   .left-detail-box {
     width: 100%;
-    height: 64vh;
     padding: 0rem 2rem;
   }
   .right-img-box {
     width: 90%;
     margin: 0;
-    margin-top: -6.25rem;
+    margin-top: -3.25rem;
   }
 
   #md-container {
@@ -374,15 +350,16 @@
   .left-img-box {
     width: 90%;
     margin: 0;
-    margin-top: -6.25rem;
+    margin-top: -3.25rem;
   }
 
-  #smaller {
-    height: 55vh;
+  #rdb-iw,
+  #ldb-dt {
+    height: 400px;
   }
 
-  #bigger {
-    height: 105vh;
+  #rdb-ve {
+    height: 350px;
   }
 
   .los-container {
@@ -409,7 +386,7 @@
   .left-detail-box {
     width: 100%;
     height: 56vh;
-    padding: 0rem 6rem 0rem 2rem;
+    padding: 0rem 8rem 0rem 2rem;
   }
   .right-img-box {
     width: 70%;
@@ -423,19 +400,21 @@
 
   .right-detail-box {
     width: 100%;
-    padding: 0rem 2rem 0rem 8rem;
+    padding: 0rem 4rem 0rem 8rem;
   }
   .left-img-box {
     width: 70%;
     margin: 0;
     margin-right: -6.25rem;
   }
-  #smaller {
-    height: 50vh;
+
+  #rdb-iw,
+  #ldb-dt {
+    height: 400px;
   }
 
-  #bigger {
-    height: 105vh;
+  #rdb-ve {
+    height: 350px;
   }
 
   .los-container h1 {
@@ -460,7 +439,7 @@
   .left-detail-box {
     width: 100%;
     height: 50vh;
-    padding: 0rem 6rem 0rem 2rem;
+    padding: 0rem 10rem 0rem 2rem;
   }
   .right-img-box {
     width: 70%;
@@ -474,19 +453,16 @@
 
   .right-detail-box {
     width: 100%;
-    padding: 0rem 2rem 0rem 8rem;
+    padding: 0rem 6rem 0rem 8rem;
   }
   .left-img-box {
     width: 70%;
     margin: 0;
     margin-right: -6.25rem;
   }
-  #smaller {
-    height: 40vh;
-  }
 
-  #bigger {
-    height: 96vh;
+  #rdb-ve {
+    height: 400px;
   }
 
   .los-container h1 {
@@ -508,8 +484,7 @@
   }
   .left-detail-box {
     width: 100%;
-    height: 60vh;
-    padding: 0rem 6rem 0rem 2rem;
+    padding: 0rem 13rem 0rem 2rem;
   }
   .right-img-box {
     width: 70%;
@@ -523,18 +498,23 @@
 
   .right-detail-box {
     width: 100%;
-    padding: 0rem 2rem 0rem 8rem;
+    padding: 0rem 8rem 0rem 8rem;
   }
   .left-img-box {
     width: 70%;
     margin: 0;
     margin-right: -6.25rem;
   }
-  #smaller {
-    height: 60vh;
+  #rdb-iw,
+  #ldb-dt,
+  #rdb-ve {
+    height: 400px;
   }
+}
 
-  #bigger {
-    height: 103vh;
+/*Description unset justification*/
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .description p {
+    text-align: unset;
   }
 }
