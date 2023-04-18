@@ -30,60 +30,102 @@
     <!--Navigation bar-->
     <div id="navBar"></div>
 
-    <!--=======Contact section=======-->
-    <section class="contact sectionCTC" id="contact">
-      <div class="container flex-center">
-        <div class="content">
-          <div class="contact-right">
-            <h2>Contact The Forest</h2>
-            <form action="" class="contact-form">
-              <div class="first-row">
-                <input type="text" placeholder="Name" />
-              </div>
-              <div class="second-row">
-                <input type="email" placeholder="Email" />
-                <input type="text" placeholder="Subject" />
-              </div>
-              <div class="third-row">
-                <textarea
-                  name="message"
-                  id=""
-                  rows="7"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <button class="btnSU" type="submit">Send Message</button>
-            </form>
-          </div>
-          <div class="contact-left">
-            <h2>aikiForest <span>Head Office</span></h2>
-            <div class="HO-contents">
-              <span>
-                Alexandra Retail Centre <br />
-                460 Alexandra Road #03-02 Singapore 119963</span
-              >
+    <!-- <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-              <span> Tel: +65 6273 1125</span>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-              <span> Mobile: +65 9112 5473</span>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required />
 
-              <span>
-                Email:
-                <a href="mailto:enquiries@aikiForest.com"></a
-                >enquiries@aikiForest.com</span
-              >
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
 
-              <span> Office Hours: 11am – 6pm daily</span>
-
-              <span> Closed on Public Holidays</span>
-            </div>
-          </div>
-        </div>
+      <div id="reason-for-contact">
+        <label>Reason for Contact:</label>
+        <input type="radio" name="reason" value="support" />Support
+        <input type="radio" name="reason" value="sales" />Sales
+        <input type="radio" name="reason" value="feedback" />Feedback
       </div>
+
+      <div id="support-options" class="hidden">
+        <label>Support Options:</label>
+        <input type="checkbox" name="option" value="technical" />Technical
+        <input type="checkbox" name="option" value="billing" />Billing
+      </div>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <section class="section top-section-ctc">
+      <span id="highlight"
+        >Book your first trial with us <span id="highlight-g">now!</span></span
+      >
+    </section>
+
+    <section class="section">
+      <form action="">
+        <label for="target">Who is this trial for?</label>
+        <select id="target" name="target">
+          <option value="child">My Child</option>
+          <option value="me">Myself</option>
+        </select>
+
+        <label for="yname">Your Full Name</label>
+        <input type="text" id="yname" name="name" placeholder="Name" required />
+
+        <label for="cname">Child's Full Name</label>
+        <input type="text" id="cname" name="name" placeholder="Name" required />
+
+        <label for="yage">Your age</label>
+        <input type="text" id="age" placeholder="Age" />
+
+        <label for="cage">Child's Age (This Year)</label>
+        <input type="text" id="age" placeholder="Age" />
+
+        <label for="location">Location for Trial</label>
+        <select id="location" name="location">
+          <option value="arc">Alexandra Retail Centre</option>
+          <option value="stpy">Safra Toa Payoh</option>
+          <option value="rv">Rivervale</option>
+        </select>
+
+        <label for="schedule">Choose a Schedule</label>
+        <select id="schedule" name="schedule">
+          <option value="arcSch1">arc Monday</option>
+          <option value="arcSch2">arc Tuesday</option>
+          <option value="arcSch3">arc Wednesday</option>
+        </select>
+
+        <label for="schedule">Choose a Schedule</label>
+        <select id="schedule" name="schedule">
+          <option value="stpySch1">stpy Monday</option>
+          <option value="stpySch2">stpy Tuesday</option>
+          <option value="stpySch3">stpy Wednesday</option>
+        </select>
+
+        <label for="schedule">Choose a Schedule</label>
+        <select id="schedule" name="schedule">
+          <option value="rvSch1">rv Monday</option>
+          <option value="rvSch2">rv Tuesday</option>
+          <option value="rvSch3">rv Wednesday</option>
+        </select>
+
+        <label for="member">Safra Member?</label>
+        <select id="member" name="member">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
     </section>
 
     <!--Footer-->
     <div id="footer"></div>
+    <script src="js/contact.js"></script>
     <script src="js/general.js"></script>
   </body>
 </html>
