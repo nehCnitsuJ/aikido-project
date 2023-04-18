@@ -62,68 +62,6 @@
   object-fit: cover;
 }
 
-.img-model {
-  z-index: 999999;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-
-.img-model.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.img-model-body {
-  position: relative;
-  background: #fff;
-  max-width: 600px;
-  margin: 1.25rem;
-  padding: 2.5rem;
-  border-radius: 10px;
-  transform: translateY(-50px);
-  transition: 0.5s ease;
-}
-
-.model-contents {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.7rem;
-}
-
-.model-contents p,
-.model-contents span {
-  font-size: 1.1em;
-}
-
-.model-contents span {
-  font-weight: 700;
-}
-
-.img-model.active .img-model-body {
-  transform: translateY(0);
-}
-
-.img-close-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1.25rem;
-  cursor: pointer;
-}
-
-.img-model-body h3 {
-  font-size: 1.5em;
-}
-
 /*Teacher description*/
 .desc-container {
   display: flex;
@@ -138,6 +76,8 @@
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   line-height: 1.4rem;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .desc-container h1 span {
@@ -199,8 +139,12 @@ h5 {
 }
 
 @media only screen and (min-width: 1440px) {
+  .teachers-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 0rem 6rem;
+  }
+
   .desc-container {
-    width: 90%;
-    padding-left: 4rem;
+    padding: 2rem 6rem;
   }
 } ;
