@@ -33,18 +33,8 @@
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
-}
-
-#highlight {
-  font-size: 1.8rem;
-}
-
-#highlight-g {
-  color: #b7cc00;
-}
-
-.desc-container span {
-  font-weight: 600;
+  text-align: justify;
+  text-align-last: left;
 }
 
 /*Schedule + information*/
@@ -219,9 +209,6 @@
   }
   .class-imgs-container {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  }
-  .desc-container {
-    width: 90%;
   }
 }
 
