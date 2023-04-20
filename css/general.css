@@ -690,9 +690,8 @@ footer span {
 
 @media only screen and (min-width: 768px) {
   .footer-container {
-    flex-direction: row;
-    padding: 5rem 9rem;
-    gap: 0rem;
+    padding: 3rem 7rem;
+    gap: 2rem;
   }
 
   .footer-left-top span {
