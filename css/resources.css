@@ -59,3 +59,25 @@
     width: 80%;
   }
 }
+
+/*Video media queries*/
+@media only screen and (min-width: 425px) and (max-width: 1023px) {
+  .videos-container video {
+    width: 360px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .videos-container video {
+    width: 560px;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .videos-container video {
+    width: 660px;
+    height: 500px;
+  }
+}
