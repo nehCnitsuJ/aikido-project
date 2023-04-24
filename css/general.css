@@ -30,6 +30,11 @@ video {
   border-radius: 0.7em;
 }
 
+p {
+  text-align: justify;
+  text-align-last: left;
+}
+
 span {
   font-weight: 700;
 }
