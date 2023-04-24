@@ -63,6 +63,10 @@
   transition: ease-in-out 0.5s;
 }
 
+.hidden {
+  display: none;
+}
+
 /*Landscape image*/
 .welcome-container {
   background-image: url("../imgs/landscape5.jpg");
