@@ -96,7 +96,7 @@ locationTrial.addEventListener("change", (event) => {
     stpySch.setAttribute("disabled", true);
 
     rvAttr.classList.remove("hidden");
-    arcSch.removeAttribute("disabled");
+    rvSch.removeAttribute("disabled");
 
     submitBtn.classList.remove("hidden");
   }
