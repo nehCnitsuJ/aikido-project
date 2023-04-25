@@ -18,9 +18,9 @@
 
   <body>
     <!--Scroll to top btn-->
-    <div class="scrollToTop-btn flex-center">
+    <!-- <div class="scrollToTop-btn flex-center">
       <i class="bi bi-arrow-up"></i>
-    </div>
+    </div> -->
 
     <!--Add Products section-->
     <section class="section">
@@ -316,21 +316,6 @@
         return ul.outerHTML;
       }
 
-      let findBox = document.getElementById("find");
-      findBox.addEventListener("keyup", function (evt) {
-        let filter = this.value.toUpperCase();
-        let l = document.getElementsByClassName("productcard");
-        for (var i = 0; i < l.length; i++) {
-          let a = l[i];
-          let value = a.id;
-          if (value.toUpperCase().indexOf(filter) > -1) {
-            l[i].style.display = "";
-          } else {
-            l[i].style.display = "none";
-          }
-        }
-      });
-
       function DelAProduct(evt) {
         let pdtTitle = evt.currentTarget.pdtTitle;
         set(
@@ -346,6 +331,6 @@
     </script>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
-    <script src="js/general.js"></script>
+    <!-- <script src="js/general.js"></script> -->
   </body>
 </html>
