@@ -52,6 +52,23 @@
   width: 140px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  line-height: 35px;
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1335px) {
   .location-imgs {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

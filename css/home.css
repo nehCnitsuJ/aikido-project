@@ -143,7 +143,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .class-details span {
@@ -160,12 +160,14 @@
   justify-content: center;
 }
 
-#class-a {
+#age-group a {
   color: orange;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .trial-btn {
-  width: 170px;
+  width: 160px;
   background-color: white;
   color: black;
   font-size: 1rem;
