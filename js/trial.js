@@ -140,22 +140,3 @@ rvSch.addEventListener("change", (event) => {
     submitBtn.classList.remove("hidden");
   }
 });
-
-//On change, show submit button
-// arcAttr.addEventListener("change", (event) => {
-//   if (event.target.value === "chosen") {
-//     submitBtn.classList.remove("hidden");
-//   }
-// });
-
-// stpyAttr.addEventListener("change", (event) => {
-//   if (event.target.value === "chosen") {
-//     submitBtn.classList.remove("hidden");
-//   }
-// });
-
-// rvAttr.addEventListener("change", (event) => {
-//   if (event.target.value === "chosen") {
-//     submitBtn.classList.remove("hidden");
-//   }
-// });
