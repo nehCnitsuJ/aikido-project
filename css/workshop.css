@@ -1,28 +1,9 @@
-.desc-section {
-  padding-top: 2rem;
-}
-
-.top-section-ws {
+#intro-top {
   padding-top: 6rem;
-  padding-bottom: 0rem;
-  padding-left: 4rem;
-}
-
-#list {
-  padding-top: 0rem;
-}
-
-.los-top-section {
-  padding-top: 0rem;
-}
-
-.section-headers {
-  flex-direction: column;
-  margin-bottom: 2rem;
 }
 
 /*Layout design*/
-#layout {
+.layout {
   min-height: 70vh;
   width: 100%;
 }
@@ -59,6 +40,18 @@
   line-height: 1.5rem;
   text-align: justify;
   text-align-last: left;
+}
+
+.description a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+
+  font-size: 25px;
+  color: #666362;
+  text-align: center;
+  line-height: 35px;
 }
 
 #cs {
@@ -127,22 +120,6 @@
   color: #666362;
 }
 
-/*List of schools*/
-.los-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0rem 4rem;
-}
-
-.los-container-header h1 {
-  font-size: 1.5rem;
-}
-
-.los-container li {
-  line-height: 2rem;
-}
-
 @media only screen and (min-width: 320px) and (max-width: 766px) {
   .container {
     flex-direction: column;
@@ -153,7 +130,6 @@
   }
 
   .description {
-    justify-content: center;
     height: 100%;
   }
 
@@ -185,11 +161,11 @@
 
   #rdb-iw,
   #ldb-dt {
-    height: 600px;
+    height: 550px;
   }
 
   #rdb-ve {
-    height: 500px;
+    height: 450px;
   }
 
   .los-container {
@@ -243,11 +219,11 @@
 
   #rdb-iw,
   #ldb-dt {
-    height: 450px;
+    height: 500px;
   }
 
   #rdb-ve {
-    height: 350px;
+    height: 400px;
   }
 
   .los-container {
@@ -259,7 +235,7 @@
   }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 599px) {
+@media only screen and (min-width: 425px) and (max-width: 500px) {
   .container {
     flex-direction: column;
     width: 80%;
@@ -300,19 +276,60 @@
 
   #rdb-iw,
   #ldb-dt {
-    height: 500px;
+    height: 450px;
   }
 
   #rdb-ve {
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .left-detail-box {
+    width: 100%;
+    height: 82vh;
+    padding: 0rem 2rem;
+  }
+  .right-img-box {
+    width: 90%;
+    margin: 0;
+    margin-top: -3.25rem;
+  }
+
+  #img3 {
+    margin-top: -4.25rem;
+  }
+
+  #md-container {
+    flex-direction: column-reverse;
+  }
+
+  .right-detail-box {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+
+  .left-img-box {
+    width: 90%;
+    margin: 0;
+    margin-top: -3.25rem;
+  }
+
+  #rdb-iw,
+  #ldb-dt {
     height: 400px;
   }
 
-  .los-container {
-    padding: 0rem;
-  }
-
-  .los-container h1 {
-    font-size: 1rem;
+  #rdb-ve {
+    height: 330px;
   }
 }
 
@@ -355,19 +372,11 @@
 
   #rdb-iw,
   #ldb-dt {
-    height: 400px;
+    height: 360px;
   }
 
   #rdb-ve {
-    height: 350px;
-  }
-
-  .los-container {
-    padding: 0rem;
-  }
-
-  .los-container h1 {
-    font-size: 1rem;
+    height: 300px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -416,10 +425,6 @@
   #rdb-ve {
     height: 350px;
   }
-
-  .los-container h1 {
-    font-size: 1.5rem;
-  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1198px) {
@@ -463,10 +468,6 @@
 
   #rdb-ve {
     height: 400px;
-  }
-
-  .los-container h1 {
-    font-size: 1.5rem;
   }
 }
 

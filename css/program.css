@@ -1,29 +1,5 @@
-.desc-section {
-  padding-top: 0rem;
-}
-
-.top-section-p {
-  padding-top: 8rem;
-  padding-bottom: 0rem;
-}
-
-.section-headers {
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-
-#PSE-header {
-  margin-bottom: 0rem;
-}
-
-.section-headers span {
-  font-size: 1.1rem;
-  font-weight: 300;
-  color: #666362;
-}
-
-#secondline {
-  font-size: 1rem;
+#psep-top {
+  padding-top: 2rem;
 }
 
 /*Layout design*/
@@ -153,6 +129,18 @@
   font-weight: 700;
 }
 
+.description a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+
+  font-size: 25px;
+  color: #666362;
+  text-align: center;
+  line-height: 35px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 766px) {
   #secondline {
     font-size: 0.8rem;
@@ -196,16 +184,19 @@
     padding: 0rem 2rem;
   }
 
-  #rdb-as {
-    height: 1100px;
-  }
-
   .left-img-box {
     width: 90%;
     margin: 0;
     margin-top: -6.25rem;
   }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+  #rdb-as {
+    height: 730px;
+  }
+}
+
 @media only screen and (min-width: 375px) and (max-width: 424px) {
   #secondline {
     font-size: 0.8rem;
@@ -237,6 +228,10 @@
     height: 500px;
   }
 
+  #rdb-as {
+    height: 600px;
+  }
+
   .right-img-box {
     width: 90%;
     margin: 0;
@@ -252,10 +247,6 @@
     padding: 0rem 2rem;
   }
 
-  #rdb-as {
-    height: 1000px;
-  }
-
   .left-img-box {
     width: 90%;
     margin: 0;
@@ -263,7 +254,7 @@
   }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 599px) {
+@media only screen and (min-width: 425px) and (max-width: 600px) {
   #secondline {
     font-size: 0.8rem;
   }
@@ -291,7 +282,11 @@
   #ldb-sev,
   #rdb-pal,
   #rdb-sha {
-    height: 400px;
+    height: 430px;
+  }
+
+  #rdb-as {
+    height: 600px;
   }
 
   .right-img-box {
@@ -307,10 +302,6 @@
   .right-detail-box {
     width: 100%;
     padding: 0rem 2rem;
-  }
-
-  #rdb-as {
-    height: 850px;
   }
 
   .left-img-box {
@@ -344,7 +335,8 @@
   #ldb-cca,
   #ldb-sev,
   #rdb-pal,
-  #rdb-sha {
+  #rdb-sha,
+  #rdb-as {
     height: 400px;
   }
 
@@ -361,10 +353,6 @@
   .right-detail-box {
     width: 100%;
     padding: 0rem 2rem;
-  }
-
-  #rdb-as {
-    height: 850px;
   }
 
   .left-img-box {
@@ -411,6 +399,10 @@
     height: 370px;
   }
 
+  #rdb-as {
+    height: 450px;
+  }
+
   .right-img-box {
     width: 70%;
     margin: 0;
@@ -424,10 +416,6 @@
   .right-detail-box {
     width: 100%;
     padding: 0rem 2rem 0rem 8rem;
-  }
-
-  #rdb-as {
-    height: 750px;
   }
 
   .left-img-box {
@@ -465,7 +453,8 @@
   #ldb-cca,
   #ldb-sev,
   #rdb-pal,
-  #rdb-sha {
+  #rdb-sha,
+  #rdb-as {
     height: 400px;
   }
 
@@ -482,10 +471,6 @@
   .right-detail-box {
     width: 100%;
     padding: 0rem 2rem 0rem 8rem;
-  }
-
-  #rdb-as {
-    height: 800px;
   }
 
   .left-img-box {
@@ -519,7 +504,7 @@
   }
 
   #rdb-as {
-    height: 850px;
+    height: 450px;
   }
 
   .right-img-box {
@@ -528,17 +513,6 @@
   }
   .description p {
     font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 1290px) {
-  #rdb-as {
-    height: 750px;
-  }
-}
-
-@media only screen and (min-width: 1350px) {
-  #rdb-as {
-    height: 700px;
   }
 }
 
