@@ -11,6 +11,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
@@ -24,8 +30,17 @@
     <!--Navigation bar-->
     <div id="navBar"></div>
 
+    <div id="productsDiv" class="container"></div>
+
     <!--Footer-->
-    <div id="footer"></div>
+    <!-- <div id="footer"></div> -->
+    <script>
+      function getShortTitle() {
+        if (title.length > 49) title = title.substring(0, 47);
+        else return title;
+        return title + "..";
+      }
+    </script>
     <script src="js/general.js"></script>
   </body>
 </html>

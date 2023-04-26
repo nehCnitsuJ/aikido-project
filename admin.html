@@ -22,36 +22,30 @@
       <i class="bi bi-arrow-up"></i>
     </div> -->
 
-    <!--Add Products section-->
-    <section class="section">
-      <div class="upload-container flex-center">
-        <div class="listing-content">
-          <label>Product Name :</label>
-          <input type="text" placeholder="Product Name" />
-        </div>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">Add Product Here</h3>
+        <div class="listingcontent">
+          <label><b>Product Name :</b></label>
 
-        <div class="listing-content flex-center">
-          <label id="pdlab">Product Description :</label>
-          <textarea id="desarea"></textarea>
-        </div>
+          <input id="nameinp" type="text" placeholder="Product Name" />
 
-        <div id="imagesDiv"></div>
+          <label id="pdlab"><b>Product Description :</b></label>
+          <textarea id="desarea"></textarea><br /><br />
+          <div id="imagesDiv"></div>
+        </div>
 
         <div id="controldiv">
           <label id="uploadstat" hidden>Uploading Image</label>
-          <button id="loadlab" class="btnSU">Clear Images</button>
-          <button id="selimgsbtn" class="btnSU">Select Images</button>
-          <button id="addprodbtn" class="btnSU">Add Product</button>
+          <button id="loadlab" class="bn59">Clear Images</button>
+          <button id="selimgsbtn" class="bn59">Select Images</button>
+          <button id="addprodbtn" class="bn59">Add Product</button>
         </div>
       </div>
     </section>
 
-    <!--=======product display=======-->
-    <section class="section">
-      <div id="productsDiv" class="img-container flex-center"></div>
-    </section>
     <script type="module">
-      // Variables and references
+      /*Variables & References*/
       var Files = [];
       var FileReaders = [];
       var ImageLinksArray = [];
@@ -140,13 +134,12 @@
         proglab.disabled = false;
       }
 
-      //------------------------ EVENTS ------------------------
-
+      //-----------------------------------EVENTS--------------------------------//
       selBtn.addEventListener("click", OpenFileDialog);
       addBtn.addEventListener("click", UploadAllImages);
       proglab.addEventListener("click", ClearImages);
 
-      //------------------------UPLOAD IMAGE TO FIREBASE STORAGE--------------
+      //-----------------------------------UPLOAD TO FIREBASE--------------------------------//
 
       function UploadAllImages() {
         selBtn.disabled = true;
@@ -203,15 +196,10 @@
         );
       }
 
-      //--------------------IMPORTS + CONFIGRATION----------------------
+      //-----------------------------------IMPORTS + CONFIGURATIONS --------------------------------//
+
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
-      import {
-        getDatabase,
-        ref,
-        set,
-        child,
-        get,
-      } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js";
+      //IMPORT FIREBASE STORAGE
       import {
         getStorage,
         ref as sRef,
@@ -219,16 +207,27 @@
         getDownloadURL,
       } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-storage.js";
 
+      //FIREBASE REALTIME DATABASE
+      import {
+        getDatabase,
+        ref,
+        set,
+        child,
+        get,
+        update,
+        remove,
+      } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js";
+
       const firebaseConfig = {
-        apiKey: "AIzaSyDqe2ZU_hAz3C5YnQ5t39kRr6wCX2FTiU8",
-        authDomain: "aikidowebsite-7f006.firebaseapp.com",
+        apiKey: "AIzaSyAnoH63yEOfzs1jKZCqmYyl3Ftb6tgvt0g",
+        authDomain: "aikidowebsite-d9ae2.firebaseapp.com",
         databaseURL:
-          "https://aikidowebsite-7f006-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "aikidowebsite-7f006",
-        storageBucket: "aikidowebsite-7f006.appspot.com",
-        messagingSenderId: "763899784407",
-        appId: "1:763899784407:web:7777088d8763ebd87cd492",
-        measurementId: "G-T5JJ3L657F",
+          "https://aikidowebsite-d9ae2-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "aikidowebsite-d9ae2",
+        storageBucket: "aikidowebsite-d9ae2.appspot.com",
+        messagingSenderId: "586387827383",
+        appId: "1:586387827383:web:afba4c1fd486bdeb193b32",
+        measurementId: "G-HG29YJZH51",
       };
 
       // Initialize Firebase
@@ -251,86 +250,8 @@
         });
         RestoreBack();
       }
-      var OuterDiv = document.getElementById("productsDiv");
-      var ArrayOfProducts = [];
-      window.addEventListener("load", GetAllProducts);
-
-      function GetAllProducts() {
-        const dbref = ref(realdb);
-
-        get(child(dbref, "TheProductRealdb")).then((snapshot) => {
-          snapshot.forEach((prod) => {
-            ArrayOfProducts.push(prod.val());
-          });
-          AddAllProducts();
-        });
-      }
-
-      function AddAllProducts() {
-        let i = 0;
-        ArrayOfProducts.forEach((prod) => {
-          if (prod.LinksOfImagesArray) {
-            AddAProduct(prod, i++);
-          }
-        });
-      }
-
-      function AddAProduct(product, index) {
-        let html =
-          `
-          <img src="` +
-          product.LinksOfImagesArray[0] +
-          `" class="thumb mt-2" id="thumb` +
-          index +
-          `">
-          <p class="title" id="title` +
-          index +
-          `">` +
-          product.ProductTitle +
-          `</p>
-          ` +
-          `
-          <h5 class="description">` +
-          product.Description +
-          `</h5>
-          <button class="bn59" id="${
-            "delbtn" + product.ProductTitle + Date.now()
-          }" style="background-color: red">Delete</button>
-          `;
-
-        let newProd = document.createElement("div");
-        newProd.classList.add("productcard");
-        newProd.id = product.ProductTitle.toUpperCase();
-        newProd.innerHTML = html;
-        OuterDiv.append(newProd);
-
-        const delbtn = document.getElementById(
-          "delbtn" + product.ProductTitle + Date.now()
-        );
-        delbtn.addEventListener("click", DelAProduct);
-        delbtn.pdtTitle = product.ProductTitle;
-      }
-
-      function ProductDescription(array) {
-        document.getElementById("description").innerHTML = product.Description;
-        return ul.outerHTML;
-      }
-
-      function DelAProduct(evt) {
-        let pdtTitle = evt.currentTarget.pdtTitle;
-        set(
-          ref(
-            realdb,
-            "TheProductRealdb/" + pdtTitle.replace(/[^a-zA-Z0-9]/g, "") + "/"
-          ),
-          {}
-        ).then(() => {
-          location.reload();
-        });
-      }
     </script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+
     <!-- <script src="js/general.js"></script> -->
   </body>
 </html>
