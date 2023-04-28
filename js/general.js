@@ -3,23 +3,6 @@ $.get("nav.html", function (data) {
   $("#navBar").replaceWith(data);
 });
 
-//Sticky navbar
-window.onscroll = function () {
-  stickyscroll();
-};
-
-var navbar = document.getElementById("navBar");
-
-var sticky = navbar.offsetTop;
-
-function stickyscroll() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
 //Scroll to top button
 const scrollTopBtn = document.querySelector(".scrollToTop-btn");
 
