@@ -114,11 +114,6 @@
   border-bottom: 0.2em solid rgb(197, 197, 7);
 }
 
-#li-YA .item {
-  background: #fff;
-  color: #666362;
-}
-
 #li-YA .item:hover {
   transform: scale(1.03);
   border-bottom: 0.2em solid #242526;
@@ -201,10 +196,10 @@
 
 @media only screen and (min-width: 1440px) {
   .attribute-info {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
   .class-imgs-container {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 

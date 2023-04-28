@@ -77,12 +77,12 @@
 
 @media only screen and (min-width: 1336px) and (max-width: 1735px) {
   .location-imgs {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 
 @media only screen and (min-width: 1736px) {
   .location-imgs {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
