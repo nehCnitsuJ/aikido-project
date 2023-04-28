@@ -1,3 +1,9 @@
+nav .logo,
+nav a,
+nav i {
+  color: #fff;
+}
+
 .about-section {
   padding-bottom: 0rem;
 }
